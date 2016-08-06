@@ -1,0 +1,26 @@
+admin:
+  port: 9991
+
+namers:
+- kind: io.l5d.consul
+  host: consul1
+  experimental: true
+  port: 8500
+storage:
+  # add a key in consul localhost:8500 with value.
+  # namerd/dtabs/default =>  and put the following dtabs info in
+  # /host/nginx  => /$/inet/nginx_1/80;
+  # /host/ou   => /$/inet/offerupnow.com/80;
+  # /http/1.1/* => /host;
+  kind: io.l5d.consul
+  host: consul1
+  experimental: true
+  port: 8500
+interfaces:
+- kind: io.l5d.thriftNameInterpreter
+  ip: 0.0.0.0
+  port: 4100
+- kind: io.l5d.httpController
+  ip: 0.0.0.0
+  port: 4180
+
