@@ -7,11 +7,11 @@ This dtab is a proof of concept to mix static bound name(nginx_1 and microsoft),
 
 Open your browser localhost:8500 add a key *namerd/dtabs/default* and put in following dtabs
 ```
+/host => /#/io.l5d.fs;
 /host/nginx  => /$/inet/nginx_1/80;
 /host/ms   => /$/inet/microsoft.com/80;
 /srv => /#/io.l5d.consul/dc1;
 /host => /srv;
-/host => /#/io.l5d.fs;
 /http/1.1/* => /host;
 ```
 
