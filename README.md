@@ -1,3 +1,6 @@
+# Runtime
+Tested on [docker for mac](https://docs.docker.com/engine/installation/mac/)
+
 # building shortcut
 alias proxy="docker-compose -f proxy.yml  -p linkerd"
 
