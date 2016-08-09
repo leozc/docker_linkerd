@@ -34,8 +34,8 @@ http://localhost:9991/dtab/default
 ## linkerd web interface
 http://localhost:9990/
 
-# (Non-scientific) Load test
-Each of the following test has been repeated 3 times and pick the medium.
+# Load test (Non-scientific-works-on-my-machine version)
+Each of the following test has been repeated 3 times and the medium is picked.
 ## Direct
 > wrk -c 10 -d 60s -t 10 --latency -H 'Host: nginx_1' http://localhost:8001
 ```
