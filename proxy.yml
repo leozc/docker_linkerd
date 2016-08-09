@@ -26,14 +26,14 @@ services:
     image: buoyantio/linkerd:0.7.2
     container_name: linkerd
     ports: ["4140:4140", "9990:9990"]
-    volumes: ["conf:/io.buoyant/linkerd/config:ro"]
+    volumes: ["./conf:/io.buoyant/linkerd/config:ro"]
     command: /io.buoyant/linkerd/config/sample_linkerd.yml
 
   namerd:
     image: buoyantio/namerd:0.7.2
     container_name: namerd
     ports: ["4100:4100", "4180:4180", "9991:9991"]
-    volumes: ["conf:/io.buoyant/linkerd/config:ro"]
+    volumes: ["./conf:/io.buoyant/linkerd/config:ro"]
     command: /io.buoyant/linkerd/config/sample_namerd.yml
 
   nginx-proxy:

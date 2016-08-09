@@ -1,3 +1,6 @@
+# building shortcut
+alias proxy="docker-compose -f proxy.yml  -p linkerd"
+
 # Set up docker composer alias
 > alias proxy='docker-compose --project-name proxy -f $YOURPROJECT/proxy.yml'
 
