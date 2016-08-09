@@ -90,4 +90,4 @@ Transfer/sec:      2.74MB
 ```
 
 # Proof working with consul name binding
-curl -H'host:consul'  http://localhost:4140
+> curl -H'host:consul'  http://localhost:4140
