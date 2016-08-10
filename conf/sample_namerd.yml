@@ -3,14 +3,14 @@ admin:
 
 namers:
 - kind: io.l5d.consul
-  host: consul1
+  host: consul
   experimental: true
   port: 8500
 - kind: io.l5d.fs
   rootDir: /io.buoyant/linkerd/config/disco
 storage:
   kind: io.l5d.consul
-  host: consul1
+  host: consul
   experimental: true
   port: 8500
 interfaces:
